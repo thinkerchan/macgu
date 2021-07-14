@@ -4,7 +4,7 @@
     <main>
       <div class="left-side">
         <span class="title">
-          Welcome to your new project!
+          hello world
         </span>
         <system-information></system-information>
       </div>
@@ -21,6 +21,7 @@
         </div>
         <div class="doc">
           <div class="title alt">Other Documentation</div>
+
           <button class="alt" @click="open('https://electron.atom.io/docs/')">Electron</button>
           <button class="alt" @click="open('https://vuejs.org/v2/guide/')">Vue.js</button>
         </div>
@@ -38,6 +39,9 @@
     methods: {
       open (link) {
         this.$electron.shell.openExternal(link)
+      },
+      loadLyrics(){
+        // this.loadLyrics = false;
       }
     }
   }

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <p>这是一个组件</p>
     <div class="title">Information</div>
     <div class="items">
       <div class="item">
@@ -17,6 +18,7 @@
       <div class="item">
         <div class="name">Electron:</div>
         <div class="value">{{ electron }}</div>
+        <div class="value">测试{{require('vue/package.json').version}}</div>
       </div>
       <div class="item">
         <div class="name">Node:</div>
